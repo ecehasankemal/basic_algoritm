@@ -54,6 +54,7 @@ void	camel_to_snake(char *str)
 		index++;
 	}
 	ft_putstr(string);
+	free(string);
 }
 
 int	main(int ac, char **av)
