@@ -46,7 +46,7 @@ void	camel_to_snake(char *str)
 		if(str[iter] >= 65 && str[iter] <= 90)
 		{
 			string[index] = '_';
-			string[++index] = str[iter];
+			string[++index] = str[iter] + 32;
 		}
 		else
 			string[index] = str[iter];
