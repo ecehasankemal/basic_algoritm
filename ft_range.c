@@ -10,6 +10,8 @@ int	*ft_range(int start, int end)
 	else
 		iter = end - start;
 	result = malloc(sizeof(int) * iter + 1);
+	if (result == NULL)
+		return (NULL);
 	while (iter >= 0)
 	{
 		result[iter] = end;
